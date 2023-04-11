@@ -2,10 +2,15 @@
 import Layoutt from "../layouts/Layoutt.astro";
 import Header from "../components/Header.astro";
 import Static from "../components/Static.astro";
+import Images from "../components/Images.jsx";
+import Dogs from "../components/Dogs.jsx";
+
 export const prerender = true;
 ---
 
 <Layoutt title="Gif">
   <Header />
   <Static />
+  <Images client:visible />
+  <Dogs client:visible />
 </Layoutt>

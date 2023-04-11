@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Layoutt from "../layouts/Layoutt.astro";
 import Images from "../components/Images.jsx";
 import Dogs from "../components/Dogs.jsx";
+import Static from "../components/Static.astro";
 export const prerender = true;
 ---
 
@@ -43,4 +44,5 @@ export const prerender = true;
     la extinción.
   </p>
   <Images client:visible />
+  <Static client:visible />
 </Layoutt>

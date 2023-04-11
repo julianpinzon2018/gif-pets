@@ -20,17 +20,19 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
-  root: {
+  :root {
     font-family: "Montserrat", sans-serif;
     background: #e0e0e0;
     color: #1d1d1d;
     font-size: 16px;
   }
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
   html {
     font-family: system-ui, sans-serif;
     background-color: #f6f6f6;
@@ -39,6 +41,12 @@ const { title } = Astro.props;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
+  .text-animal {
+    text-align: center;
+    margin-block: 2rem;
+    font-size: 1.2rem;
+    padding-inline: 1.5rem;
+  }
   .title {
     padding: 2rem;
     padding-block-end: 0;
@@ -46,7 +54,13 @@ const { title } = Astro.props;
     text-shadow: 2px 2px 0 black;
     color: orange;
   }
-
+  .poema {
+    margin-inline: auto;
+    margin-block: 1rem;
+    padding-inline: 1rem;
+    max-width: 1200px;
+    font-size: 1.1rem;
+  }
   .containerGift {
     padding-inline: 2.5rem;
     max-width: 1200px;

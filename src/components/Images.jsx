@@ -9,12 +9,12 @@ function Animals() {
     <div>
       <h2 className="title">
         <marquee behavior="" direction="">
-          Memes chidos
+          Holisss
         </marquee>
       </h2>
       <p className="text-animal">
-        Nunca me siento tan solo como cuando necesito ponerme crema solar en la
-        espalda.
+        No sabemos nada realmente del amor si no queremos a los animales", Fred
+        Wander.
       </p>
       <div className="containerGift">
         {data.results.map((imageSizes) => (

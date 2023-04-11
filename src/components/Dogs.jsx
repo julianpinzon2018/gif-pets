@@ -1,31 +1,27 @@
 export const prerender = true;
 
-const response = await fetch("https://rickandmortyapi.com/api/character");
-const data = await response.json();
-console.log(data.results);
+const response = await fetch("https://dog.ceo/api/breed/hound/images");
+let data = await response.json();
+data = data.message;
+const d = data.slice(0, 20);
+console.log(d);
 
 function Animals() {
   return (
     <div>
       <h2 className="title">
         <marquee behavior="" direction="">
-          Dogs chidos
+          Holisss
         </marquee>
       </h2>
       <p className="text-animal">
-        Un perro puede expresar más con su cola en minutos que lo que un dueño
-        puede expresar con su lengua en horas.
+        No sabemos nada realmente del amor si no queremos a los animales", Fred
+        Wander.
       </p>
       <div className="containerGift">
-        {data.results.map((imageSizes) => (
-          <div className="pelicula" key={imageSizes.id}>
-            <img
-              className="poster"
-              src={imageSizes.image}
-              alt={imageSizes.name}
-              height={48}
-            />
-            <p>{imageSizes.name}</p>
+        {d.map((imageSizes) => (
+          <div className="pelicula" key={imageSizes}>
+            <img className="poster" src={imageSizes} alt="" height={48} />
           </div>
         ))}
       </div>

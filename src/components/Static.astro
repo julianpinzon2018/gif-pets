@@ -1,12 +1,10 @@
 ---
-import Layoutt from "../layouts/Layoutt.astro";
-import Header from "../components/Header.astro";
-export const prerender = true;
 import { Image } from "@astrojs/image/components";
+export const prerender = true;
+
 ---
 
-<Layoutt title="Gif">
-  <Header />
+<section>
   <div class="poema">
     <p>Elegía, de Miguel Hernández</p>
     <p>
@@ -460,4 +458,4 @@ import { Image } from "@astrojs/image/components";
       />
     </div>
   </div>
-</Layoutt>
+</section>

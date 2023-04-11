@@ -1,10 +1,8 @@
 export const prerender = true;
 
-const response = await fetch(
-  "https://api.giphy.com/v1/gifs/search?q=dog&api_key=9IpIWesiBJ7I7u3x8iDd9Zhm1llzHxT9&limit=20"
-);
+const response = await fetch("https://rickandmortyapi.com/api/character");
 const data = await response.json();
-// console.log(data.data);
+console.log(data.results);
 
 function Animals() {
   return (
@@ -19,14 +17,15 @@ function Animals() {
         puede expresar con su lengua en horas.
       </p>
       <div className="containerGift">
-        {data.data.map((imageSizes) => (
+        {data.results.map((imageSizes) => (
           <div className="pelicula" key={imageSizes.id}>
             <img
               className="poster"
-              src={imageSizes.images.original.url}
-              alt={imageSizes.title}
+              src={imageSizes.image}
+              alt={imageSizes.name}
+              height={48}
             />
-            <p>{imageSizes.title}</p>
+            <p>{imageSizes.name}</p>
           </div>
         ))}
       </div>

@@ -9,8 +9,6 @@ export const prerender = true;
 <!DOCTYPE html>
 <html lang="es">
   <head>
-
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
@@ -21,6 +19,20 @@ export const prerender = true;
     <title>{title}</title>
   </head>
   <body>
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-V1FSHGHV0B"
+    ></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-V1FSHGHV0B");
+    </script>
     <slot />
   </body>
 </html>
@@ -104,5 +116,3 @@ export const prerender = true;
     }
   }
 </style>
-
-<script type="text/partytown" src="/scripts/index.astro.mjs"></scrip>

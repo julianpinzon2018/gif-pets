@@ -5,6 +5,7 @@ import Cats from "../components/Cats.jsx";
 import Animals from "../components/Animals.jsx";
 import Memes from "../components/Memes.jsx";
 import Dogs from "../components/Dogs.jsx";
+export const prerender = true;
 
 // export const prerender = false;
 ---
@@ -95,7 +96,7 @@ import Dogs from "../components/Dogs.jsx";
   <Animals client:visible />
   <p class="text-animal">Los perros nos esperan fielmente.</p>
   <Dogs client:visible />
-    <p class="text-animal">
+  <p class="text-animal">
     ¡Si Dios tan solo me diera una clara señal! Como hacer un gran depósito a mi
     nombre en un banco suizo.
   </p>
@@ -116,7 +117,7 @@ import Dogs from "../components/Dogs.jsx";
   <Animals client:visible />
   <p class="text-animal">Los perros nos esperan fielmente.</p>
   <Dogs client:visible />
-    <p class="text-animal">
+  <p class="text-animal">
     ¡Si Dios tan solo me diera una clara señal! Como hacer un gran depósito a mi
     nombre en un banco suizo.
   </p>

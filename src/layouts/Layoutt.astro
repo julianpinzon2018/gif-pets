@@ -1,0 +1,87 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  root: {
+    font-family: "Montserrat", sans-serif;
+    background: #e0e0e0;
+    color: #1d1d1d;
+    font-size: 16px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #f6f6f6;
+  }
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  .title {
+    padding: 2rem;
+    padding-block-end: 0;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 0 black;
+    color: orange;
+  }
+
+  .containerGift {
+    padding-inline: 2.5rem;
+    max-width: 1200px;
+    margin: 40px auto 100px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    .pelicula {
+      text-align: center;
+
+      .titulo {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .poster {
+        max-width: 100%;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        block-size: 15rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .containerGift {
+      padding-inline: 1.5rem;
+      max-width: 100%;
+      margin: 40px auto 100px auto;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+</style>

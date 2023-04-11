@@ -1,0 +1,27 @@
+---
+import Layoutt from "../layouts/Layoutt.astro";
+import Header from "../components/Header.astro";
+
+const response = await fetch(
+  "https://api.giphy.com/v1/gifs/search?q=cat&api_key=9IpIWesiBJ7I7u3x8iDd9Zhm1llzHxT9&limit=40"
+);
+const data = await response.json();
+
+const images = data.data.map((images) => images.images.original.url);
+---
+
+<Layoutt title="GIf">
+  <Header />
+  <h1 class="title">
+    <marquee behavior="" direction="">Gatos chidos</marquee>
+  </h1>
+  <div class="containerGift">
+    {
+      images.map((imageSizes) => (
+        <div class="pelicula">
+          <img class="poster" src={imageSizes} />
+        </div>
+      ))
+    }
+  </div>
+</Layoutt>

@@ -2,7 +2,7 @@ const response = await fetch(
   "https://api.giphy.com/v1/gifs/search?q=dog&api_key=9IpIWesiBJ7I7u3x8iDd9Zhm1llzHxT9&limit=20"
 );
 const data = await response.json();
-console.log(data.data);
+// console.log(data.data);
 
 function Animals() {
   return (

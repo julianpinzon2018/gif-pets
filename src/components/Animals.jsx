@@ -2,7 +2,7 @@ const response = await fetch(
   "https://api.giphy.com/v1/gifs/search?q=animals&api_key=9IpIWesiBJ7I7u3x8iDd9Zhm1llzHxT9&limit=20"
 );
 const data = await response.json();
-console.log(data.data);
+// console.log(data.data);
 
 function Animals() {
   return (
@@ -23,6 +23,7 @@ function Animals() {
               className="poster"
               src={imageSizes.images.original.url}
               alt={imageSizes.title}
+              height={48}
             />
             <p>{imageSizes.title}</p>
           </div>

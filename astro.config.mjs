@@ -7,12 +7,5 @@ import partytown from "@astrojs/partytown";
 export default defineConfig({
   output: "static",
   adapter: vercel(),
-  integrations: [
-    react(),
-    partytown({
-      config: {
-        forward: [],
-      },
-    }),
-  ],
+  integrations: [react(), partytown()],
 });

@@ -1,3 +1,5 @@
+export const prerender = true;
+
 const response = await fetch(
   "https://api.giphy.com/v1/gifs/search?q=cat&api_key=9IpIWesiBJ7I7u3x8iDd9Zhm1llzHxT9&limit=20"
 );

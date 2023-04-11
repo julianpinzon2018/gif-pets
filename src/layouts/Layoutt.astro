@@ -87,22 +87,20 @@ export const prerender = true;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+  }
 
-    .pelicula {
-      text-align: center;
-
-      .titulo {
-        font-size: 16px;
-        font-weight: 600;
-      }
-
-      .poster {
-        max-width: 100%;
-        margin-bottom: 10px;
-        border-radius: 8px;
-        block-size: 15rem;
-      }
-    }
+  .containerGift .pelicula {
+    text-align: center;
+  }
+  .containerGift .titulo {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .containerGift .pelicula .poster {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    block-size: 15rem;
   }
 
   @media screen and (max-width: 768px) {

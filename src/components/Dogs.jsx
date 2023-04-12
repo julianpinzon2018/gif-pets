@@ -23,7 +23,7 @@ function Animals() {
           <div className="pelicula" key={imageSizes}>
             <img
               className="poster"
-              // decoding="async"
+              decoding="async"
               // loading="lazy"
               src={imageSizes}
               alt={imageSizes}

@@ -13,6 +13,9 @@ export const prerender = true;
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="canonical" href="https://gif-pets.vercel.app/" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Julian Pinzón" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -62,7 +65,8 @@ export const prerender = true;
   }
   .text-animal {
     text-align: center;
-    margin-block: 2rem;
+    margin-block-start: 2rem;
+    margin-block-end: 2.5rem;
     font-size: 1.4rem;
     padding-inline: 1.5rem;
   }
@@ -108,7 +112,7 @@ export const prerender = true;
 
   @media screen and (max-width: 768px) {
     :root {
-      font-size: 14px;
+      font-size: 11px;
     }
     .containerGift {
       padding-inline: 1.5rem;
@@ -120,6 +124,7 @@ export const prerender = true;
   @media screen and (max-width: 500px) {
     .containerGift {
       grid-template-columns: repeat(2, 1fr);
+      padding-inline: 0.5rem;
     }
   }
 </style>

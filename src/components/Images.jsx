@@ -27,7 +27,7 @@ function Animals() {
               height="13rem"
               width="13rem"
             />
-            <p className="text-image">{imageSizes.name}</p>
+            <p className="text-animal">{imageSizes.name}</p>
           </div>
         ))}
       </div>

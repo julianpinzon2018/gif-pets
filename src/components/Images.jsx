@@ -19,15 +19,15 @@ function Animals() {
       <div className="containerGift">
         {data.results.map((imageSizes) => (
           <div className="pelicula" key={imageSizes.id}>
-            <amp-img
-              class="poster"
+            <img
+              className="poster"
               // loading="lazy"
               src={imageSizes.image}
               alt={imageSizes.name}
-              height="13rem"
-              width="13rem"
+              width={200}
+              height={200}
             />
-            <p className="text-animal">{imageSizes.name}</p>
+            <p className="text-image">{imageSizes.name}</p>
           </div>
         ))}
       </div>

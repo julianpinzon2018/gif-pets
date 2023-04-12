@@ -20,14 +20,14 @@ function Animals() {
       </p>
       <div className="containerGift">
         {d.map((imageSizes) => (
-          <div class="pelicula" key={imageSizes}>
-            <amp-img
-              class="poster"
+          <div className="pelicula" key={imageSizes}>
+            <img
+              className="poster"
               // loading="lazy"
               src={imageSizes}
               alt={imageSizes}
-              height="13rem"
-              width="13rem"
+              height={200}
+              width={200}
             />
           </div>
         ))}

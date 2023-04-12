@@ -25,8 +25,8 @@ function Animals() {
               className="poster"
               src={imageSizes}
               alt=""
-              height={48}
-              width={48}
+              height={200}
+              width={200}
             />
           </div>
         ))}

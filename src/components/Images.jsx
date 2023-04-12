@@ -1,4 +1,4 @@
-export const prerender = true;
+// export const prerender = true;
 
 const response = await fetch("https://rickandmortyapi.com/api/character");
 const data = await response.json();

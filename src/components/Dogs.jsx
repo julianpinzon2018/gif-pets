@@ -1,4 +1,4 @@
-export const prerender = true;
+// export const prerender = true;
 
 const response = await fetch("https://dog.ceo/api/breed/hound/images");
 let data = await response.json();

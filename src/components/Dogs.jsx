@@ -23,7 +23,7 @@ function Animals() {
           <div className="pelicula" key={imageSizes}>
             <img
               className="poster"
-              loading="lazy"
+              // loading="lazy"
               src={imageSizes}
               alt={imageSizes}
               height={200}

@@ -20,8 +20,8 @@ function Animals() {
         {data.results.map((imageSizes) => (
           <div className="pelicula" key={imageSizes.id}>
             <img
-              decoding="async"
               className="poster"
+              // decoding="async"
               // loading="lazy"
               src={imageSizes.image}
               alt={imageSizes.name}

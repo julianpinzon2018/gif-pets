@@ -22,8 +22,8 @@ function Animals() {
         {d.map((imageSizes) => (
           <div className="pelicula" key={imageSizes}>
             <img
-              decoding="async"
               className="poster"
+              // decoding="async"
               // loading="lazy"
               src={imageSizes}
               alt={imageSizes}

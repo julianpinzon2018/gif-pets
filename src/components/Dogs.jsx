@@ -21,7 +21,13 @@ function Animals() {
       <div className="containerGift">
         {d.map((imageSizes) => (
           <div className="pelicula" key={imageSizes}>
-            <img className="poster" src={imageSizes} alt="" height={48} />
+            <img
+              className="poster"
+              src={imageSizes}
+              alt=""
+              height={48}
+              width={48}
+            />
           </div>
         ))}
       </div>

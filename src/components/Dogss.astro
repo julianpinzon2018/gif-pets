@@ -1,0 +1,32 @@
+---
+export const prerender = true;
+const response = await fetch("https://dog.ceo/api/breed/hound/images");
+let data = await response.json();
+data = data.message;
+const d = data.slice(0, 20);
+console.log(d);
+---
+
+
+  function Animals() {
+    return (
+      <div>
+        <h2 class="title">
+          <marquee behavior="" direction="">
+            Holisss
+          </marquee>
+        </h2>
+        <p class="text-animal">
+          No sabemos nada realmente del amor si no queremos a los animales",
+          Fred Wander.
+        </p>
+        <div class="containerGift">
+          {d.map((imageSizes) => (
+            <div class="pelicula" >
+              <img class="poster" src={imageSizes} alt="" height={48} />
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
